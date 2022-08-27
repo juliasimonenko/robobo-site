@@ -1,0 +1,56 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--dark-color);
+      object-fit: cover;
+    }
+  }
+}
+
+.tabs {
+  &__menu {
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+    padding-bottom: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--dark-color);
+
+      &:focus {
+        color: var(--accent-color);
+        background-color: transparent;
+      }
+
+      &--active {
+        outline: none;
+        color: var(--accent-color);
+        background-color: transparent;
+      }
+    }
+  }
+}
